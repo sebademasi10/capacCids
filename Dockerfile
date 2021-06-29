@@ -13,5 +13,6 @@ RUN npm i
 
 # Bundle app source
 COPY . .
+RUN npm run build
 EXPOSE 8080
-CMD ["node", "server.ts"]
+CMD ["node", "server.js"]
